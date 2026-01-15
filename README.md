@@ -17,12 +17,6 @@ Antes de instalar y ejecutar la aplicación, es necesario contar con las siguien
 
 ---
 
-## 🐳 Dockerización
-
-Con base en estas versiones, la aplicación se encuentra **dockerizada**, lo que permite levantar el entorno de forma sencilla y consistente sin depender de la configuración local del sistema.
-
----
-
 ## 🧩 Componentes esenciales de la aplicación
 
 La arquitectura del proyecto sigue el patrón **MVC** de Laravel. Los componentes principales se encuentran organizados de la siguiente manera:
