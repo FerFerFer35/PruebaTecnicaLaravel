@@ -170,6 +170,18 @@ php artisan key:generate
 
 7. Ejecutar migraciones  
 (Crea las tablas sin datos de prueba)
+> **Nota sobre la base de datos (SQLite)**
+>
+> Este proyecto utiliza **SQLite** como motor de base de datos.
+>
+> El archivo de base de datos se encuentra (o debe encontrarse) en la siguiente ruta:
+>
+> ```text
+> database/database.sqlite
+> ```
+>
+> El repositorio ya incluye este archivo para facilitar la ejecución inicial.  
+> Sin embargo, si por algún motivo el archivo no existe o el sistema no lo reconoce, puede crearse manualmente.
 ```bash
 php artisan migrate
 ```
