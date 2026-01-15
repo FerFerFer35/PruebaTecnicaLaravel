@@ -142,72 +142,59 @@ La información se genera dinámicamente en función de los meses registrados ta
 
 ---
 
-## ⚙️ Proceso de instalación
+## Proceso de instalación
 
-### 1️⃣ Clonar el repositorio
-
+1. Clonar el repositorio
 ```bash
-git clone
+git clone https://github.com/FerFerFer35/PruebaTecnicaLaravel.git
 ```
 
-### 2️⃣ Acceder al directorio del proyecto
-
+2. Acceder al directorio del proyecto
 ```bash
-cd nombre-del-proyecto
+cd PruebaTecnicaLaravel
 ```
 
-### 3️⃣ Instalar dependencias del backend
-
+3. Instalar dependencias de PHP
 ```bash
 composer install
 ```
 
-### 4️⃣ Instalar dependencias del frontend
-
+4. Instalar dependencias de Node
 ```bash
 npm install
 ```
 
-### 5️⃣ Configurar variables de entorno
-
-Copiar el archivo de entorno y generar la clave de la aplicación:
-
+5. Crear el archivo de entorno
 ```bash
 cp .env.example .env
+```
+
+6. Generar la clave de la aplicación
+```bash
 php artisan key:generate
 ```
 
----
-
-## 🗄️ Migración y siembra de la base de datos
-
-Ejecutar las migraciones junto con los seeders:
-
+7. Ejecutar migraciones  
+(Crea las tablas sin datos de prueba)
 ```bash
-php artisan migrate --seed
+php artisan migrate
 ```
 
-Esto creará las tablas necesarias y cargará datos de prueba para ingresos, gastos y proveedores.
-
----
-
-## 🐳 Ejecución con Docker
-
-Levantar los contenedores del proyecto:
-
+8. Compilar los assets de frontend
 ```bash
-docker compose up -d
+npm run dev
 ```
 
----
-
-## 🚀 Ejecución sin Docker
-
-En caso de no usar Docker, iniciar el servidor de desarrollo:
-
+9. Levantar el servidor de desarrollo
 ```bash
 php artisan serve
 ```
+
+10. Reiniciar la base de datos e insertar datos de prueba
+```bash
+php artisan migrate:fresh --seed
+```
+
 
 La aplicación estará disponible en:
 
