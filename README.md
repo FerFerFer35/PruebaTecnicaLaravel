@@ -13,8 +13,6 @@ Antes de instalar y ejecutar la aplicación, es necesario contar con las siguien
 - **Node.js:** 24.13.0  
 - **NPM:** 11.7.0  
 
-> ⚠️ **Nota:** NPM no es estrictamente necesario para la ejecución básica del proyecto, pero se incluye para la gestión de dependencias frontend en caso de ser requerido.
-
 ---
 
 ## 🧩 Componentes esenciales de la aplicación
